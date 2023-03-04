@@ -13,6 +13,12 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 npm create vite@latest spotify-clone -- --template vue
 ```
 
+```bash
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
+
 ## References
 
 - [Vite JS Guide](https://vitejs.dev/guide/#scaffolding-your-first-vite-project)
+- [Install Tailwind CSS with Vite](https://tailwindcss.com/docs/guides/vite#vue)
