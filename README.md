@@ -18,7 +18,13 @@ npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 ```
 
+```bash
+npm install pinia-plugin-persistedstate uniqolor vue-material-design-icons
+```
+
 ## References
 
 - [Vite JS Guide](https://vitejs.dev/guide/#scaffolding-your-first-vite-project)
 - [Install Tailwind CSS with Vite](https://tailwindcss.com/docs/guides/vite#vue)
+- [Pinia Installation](https://pinia.vuejs.org/getting-started.html)
+- [pinia-plugin-persistedstate](https://www.npmjs.com/package/pinia-plugin-persistedstate)
