@@ -105,6 +105,12 @@ let openMenu = ref(false)
       </ul>
     </div>
   </div>
+
+  <div class="fixed right-0 top-0 w-[calc(100%-240px)] overflow-auto h-full bg-gradient-to-b from-[#1c1c1c] to-black">
+    <div class="mt-[70px]"></div>
+    <RouterView />
+    <div class="mb-[100px]"></div>
+  </div>
 </template>
 
 <style scoped>
