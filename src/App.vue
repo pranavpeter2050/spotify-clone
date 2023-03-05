@@ -87,9 +87,9 @@ onMounted(() => {
       id="SideNav"
       class="h-[100%] p-6 w-[240px] fixed z-50 bg-black"
     >
-      <RouterLin to="/">
+      <RouterLink to="/">
         <img width="125" src="/images/icons/spotify-logo.png" alt="Spotify">
-      </RouterLin>
+      </RouterLink>
       <div class="my-8"></div>
       <ul>
         <RouterLink to="/">
