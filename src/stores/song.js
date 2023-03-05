@@ -13,7 +13,7 @@ export const useSongStore = defineStore('song', {
 			this.currentArtist = artist
 			this.currentTrack = track
 
-			if (this.audio && this.audio.src.) {
+			if (this.audio && this.audio.src) {
 				this.audio.pause()
 				this.isPlaying = false
 				this.audio.src = ''
