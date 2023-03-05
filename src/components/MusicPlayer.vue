@@ -174,7 +174,7 @@ watch(() => isTrackTimeCurrent.value, (time) => {
 					<div class="absolute h-[4px] z-[-0] mt-[6px] inset-y-0 left-0 w-full bg-gray-500 rounded-full" />
 
 				</div>
-				<div v-if="isTrackTimeTotal" class="text-white text-[12px] pr-2 pt-[11px]">{{ isTrackTimeTotal }}</div>
+				<div v-if="isTrackTimeTotal" class="text-white text-[12px] pl-2 pt-[11px]">{{ isTrackTimeTotal }}</div>
 			</div>
 		</div>
 
