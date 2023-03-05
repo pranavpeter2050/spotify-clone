@@ -48,6 +48,7 @@ onMounted(() => {
 			const clickPosition = (e.pageX - seekerContainer.value.offsetLeft) / seekerContainer.value.offsetWidth;
 			const time = audio.value.duration * clickPosition;
 			audio.value.currentTime = time;
+			seeker.value.value = (100 / audio.value.duration) * audio.value.currentTime;
 		})
 	}
 })
@@ -85,5 +86,22 @@ watch(() => isTrackTimeCurrent.value, (time) => {
 </script>
 
 <template>
+	<div
+		id="MusicPlayer"
+		class="
+			fixed
+			flex
+			items-center
+			justify-between
+			bottom-0
+			w-full
+			z-50
+			h-[90px]
+			bg-[#181818]
+			border-t
+			border-t-[#272727]
+		"
+	>
 
+	</div>
 </template>
