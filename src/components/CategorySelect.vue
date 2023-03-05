@@ -14,7 +14,7 @@ const { category } = toRefs(props)
 	<RouterLink to="library">
 		<div
 			v-if="randColor.color"
-			:style="`backgroung-color: ${randColor.color};`"
+			:style="`background-color: ${randColor.color};`"
 			class="
 				contrast-[2]
 				brightness-[0.87]
