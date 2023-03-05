@@ -22,7 +22,7 @@ npx tailwindcss init -p
 npm install pinia-plugin-persistedstate uniqolor vue-material-design-icons
 ```
 
-(Pinia)[https://youtu.be/ZzuqwqP1wAQ?t=1855] is used to manage state so that the Library page and the Music player are always synchronised.
+[Pinia](https://youtu.be/ZzuqwqP1wAQ?t=1855) is used to manage state so that the Library page and the Music player are always synchronised.
 
 ## Known Bugs
 
