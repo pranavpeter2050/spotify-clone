@@ -6,6 +6,7 @@ import PictureInPictureBottomRight from 'vue-material-design-icons/PictureInPict
 import Heart from 'vue-material-design-icons/Heart.vue'
 import SkipForward from 'vue-material-design-icons/SkipForward.vue'
 import SkipBackward from 'vue-material-design-icons/SkipBackward.vue'
+import MusicPlayerVolume from './MusicPlayerVolume.vue'
 
 import { useSongStore } from '../stores/song'
 import { storeToRefs } from 'pinia'
@@ -175,6 +176,10 @@ watch(() => isTrackTimeCurrent.value, (time) => {
 				</div>
 				<div v-if="isTrackTimeTotal" class="text-white text-[12px] pr-2 pt-[11px]">{{ isTrackTimeTotal }}</div>
 			</div>
+		</div>
+
+		<div class="flex items-center w-1/4 justify-end pr-10">
+			<MusicPlayerVolume />
 		</div>
 	</div>
 </template>
