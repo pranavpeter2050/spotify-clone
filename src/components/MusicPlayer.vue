@@ -28,9 +28,9 @@ onMounted(() => {
 		}, 300)
 	}
 
-	if (currentTrack.value) {
+	if (currentTrack.value && seeker.value) {
 		seeker.value.addEventListener('change', function() {
-			const time = audio.value.duration * (seeker.value.value / 100);
+			const time = audio.value.duration * (seeker.value / 100);
 			audio.value.currentTime = time;
 		})
 		
@@ -48,7 +48,7 @@ onMounted(() => {
 			const clickPosition = (e.pageX - seekerContainer.value.offsetLeft) / seekerContainer.value.offsetWidth;
 			const time = audio.value.duration * clickPosition;
 			audio.value.currentTime = time;
-			seeker.value.value = (100 / audio.value.duration) * audio.value.currentTime;
+			seeker.value = (100 / audio.value.duration) * audio.value.currentTime;
 		})
 	}
 })
@@ -60,7 +60,7 @@ const timeupdate = () => {
 		isTrackTimeCurrent.value = minutes + ':' + seconds.toString().padStart(2, '0');
 		const value = (100 / audio.value.duration) * audio.value.currentTime;
 		range.value = value;
-		seeker.value.value = value;
+		seeker.value = value;
 	})
 }
 
