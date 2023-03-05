@@ -13,6 +13,12 @@ let isHover = ref(false)
 let vol = ref(80)
 let volume = ref(null)
 
+onMounted(() => {
+	volume.value.addEventListener('input', (e) => {
+		audio.value.volume = e.currentTarget.value / 100;
+	})
+})
+
 </script>
 
 <template>
