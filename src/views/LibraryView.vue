@@ -11,6 +11,14 @@ import { useSongStore } from '../stores/song'
 import { storeToRefs } from 'pinia'
 const useSong = useSongStore()
 const { isPlaying, currentTrack, currentArtist } = storeToRefs(useSong)
+
+const playFunc = () => {
+	if (currentTrack.value) {
+		useSong.playOrPauseThisSong(currentArtist.value, currentTrack.value)
+		return
+	}
+	useSong.playFromFirst()
+}
 </script>
 
 <template>
